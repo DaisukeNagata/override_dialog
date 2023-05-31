@@ -1,7 +1,7 @@
 name: overlay_dialog
-description: A new Flutter plugin project.
-version: 0.0.1
-homepage:
+description: A dialog that can manipulate background data.
+version: 0.0.1+1
+homepage: https://github.com/DaisukeNagata/overlay_dialog
 
 environment:
   sdk: '>=3.0.2 <4.0.0'
