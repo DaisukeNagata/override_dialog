@@ -47,6 +47,7 @@ class _DrawerMyppState extends State<DrawerMypp> {
                   _backGroundColor();
                 } else {
                   _overRayDialog.reset(context);
+                  _backGroundColor();
                 }
               },
               child: const Text(
@@ -90,6 +91,7 @@ class _DrawerMyppState extends State<DrawerMypp> {
                       _innerBackground(index);
                     } else {
                       _overRayDialog2.reset(context);
+                      _innerBackground(index);
                     }
                   },
                 ),
@@ -134,7 +136,7 @@ class _DrawerMyppState extends State<DrawerMypp> {
           ),
         ),
       ),
-      10,
+      1,
     );
   }
 }

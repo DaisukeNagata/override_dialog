@@ -20,7 +20,7 @@ class _DragDropState extends State<DragDropMyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('DragDropMyApp'),
       ),
       body: Center(
         child: Column(

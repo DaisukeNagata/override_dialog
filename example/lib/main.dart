@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:overlay_dialog_example/drag_drop_my_app.dart';
 import 'package:overlay_dialog_example/drawer_my_app.dart';
+import 'package:overlay_dialog_example/front_and_my_app.dart';
 import 'package:overlay_dialog_example/list_my_app.dart';
 
 void main() {
@@ -46,6 +47,19 @@ class _MyAppState extends State<MyApp> {
                         MaterialPageRoute(
                           builder: (BuildContext context) {
                             return const DragDropMyApp();
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.add),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const FrontAndBackMyApp();
                           },
                         ),
                       );

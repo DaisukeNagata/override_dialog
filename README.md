@@ -6,7 +6,6 @@ A dialog that can manipulate background data.
 
 It works on the web, but it focuses on iOS and Android mobiles.
 
-## Sample
+## Sample version 0.0.3
 
-https://github.com/DaisukeNagata/override_dialog/assets/16457165/f375583d-7ada-45ef-90fb-accaebdc71c4
-
+https://github.com/DaisukeNagata/override_dialog/assets/16457165/0f4630f7-2bee-4ee0-8d7b-4e11b836e72b
