@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:overlay_dialog/override_dialog.dart';
+import 'package:override_dialog/override_dialog.dart';
 
 class DrawerMypp extends StatefulWidget {
   const DrawerMypp({

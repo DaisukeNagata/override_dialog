@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:overlay_dialog/override_dialog.dart';
-import 'package:overlay_dialog_example/global_key_ex.dart';
+import 'package:override_dialog/override_dialog.dart';
+import 'package:override_dialog_example/global_key_ex.dart';
 
 class ListMyApp extends StatefulWidget {
   const ListMyApp({
