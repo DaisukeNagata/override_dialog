@@ -1,7 +1,7 @@
-name: overlay_dialog
+name: override_dialog
 description: A dialog that can manipulate background data.
 version: 0.0.1+1
-homepage: https://github.com/DaisukeNagata/overlay_dialog
+homepage: https://github.com/DaisukeNagata/override_dialog
 
 environment:
   sdk: '>=3.0.2 <4.0.0'

@@ -1,13 +1,13 @@
-import 'overlay_dialog_platform_interface.dart';
+import 'override_dialog_platform_interface.dart';
 import 'package:flutter/cupertino.dart';
 
-class OverlayDialog {
+class OverrideDialog {
   late OverlayEntry _overlayEntry;
   late AnimationController _animationController;
   bool isOpen = true;
 
   Future<String?> getPlatformVersion() {
-    return OverlayDialogPlatform.instance.getPlatformVersion();
+    return OverrideDialogPlatform.instance.getPlatformVersion();
   }
 
   Future<void> show(

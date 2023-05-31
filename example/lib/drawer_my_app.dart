@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:overlay_dialog/overlay_dialog.dart';
+import 'package:overlay_dialog/override_dialog.dart';
 
 class DrawerMypp extends StatefulWidget {
   const DrawerMypp({
@@ -16,8 +16,8 @@ class _DrawerMyppState extends State<DrawerMypp> {
   final _innerOffst = const Offset(0, 1);
   final Color _color = Colors.amber.shade100;
   final List<String> items = List<String>.generate(100, (i) => "Item $i");
-  final OverlayDialog _overRayDialog = OverlayDialog();
-  final OverlayDialog _overRayDialog2 = OverlayDialog();
+  final OverrideDialog _overRayDialog = OverrideDialog();
+  final OverrideDialog _overRayDialog2 = OverrideDialog();
   _DrawerMyppState();
 
   @override

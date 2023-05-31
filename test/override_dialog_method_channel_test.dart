@@ -6,11 +6,10 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   MethodChannelOverrideDialog platform = MethodChannelOverrideDialog();
-  const MethodChannel channel = MethodChannel('overlay_dialog');
+  const MethodChannel channel = MethodChannel('override_dialog');
 
   setUp(() {
-    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-        .setMockMethodCallHandler(
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(
       channel,
       (MethodCall methodCall) async {
         return '42';
@@ -19,8 +18,7 @@ void main() {
   });
 
   tearDown(() {
-    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-        .setMockMethodCallHandler(channel, null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, null);
   });
 
   test('getPlatformVersion', () async {

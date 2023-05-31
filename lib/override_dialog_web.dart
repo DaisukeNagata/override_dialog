@@ -6,15 +6,15 @@ import 'dart:html' as html show window;
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-import 'overlay_dialog_platform_interface.dart';
+import 'override_dialog_platform_interface.dart';
 
-/// A web implementation of the OverlayDialogPlatform of the OverlayDialog plugin.
-class OverlayDialogWeb extends OverlayDialogPlatform {
-  /// Constructs a OverlayDialogWeb
-  OverlayDialogWeb();
+/// A web implementation of the OverrideDialogPlatform of the OverrideDialog plugin.
+class OverrideDialogWeb extends OverrideDialogPlatform {
+  /// Constructs a OverrideDialogWeb
+  OverrideDialogWeb();
 
   static void registerWith(Registrar registrar) {
-    OverlayDialogPlatform.instance = OverlayDialogWeb();
+    OverrideDialogPlatform.instance = OverrideDialogWeb();
   }
 
   /// Returns a [String] containing the version of the platform.

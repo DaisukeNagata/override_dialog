@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:overlay_dialog/overlay_dialog.dart';
+import 'package:overlay_dialog/override_dialog.dart';
 import 'package:overlay_dialog_example/global_key_ex.dart';
 
 class ListMyApp extends StatefulWidget {
@@ -23,7 +23,7 @@ class _ListMyState extends State<ListMyApp> {
   final List<FocusNode> _focusNode = [FocusNode()];
   final List<GlobalKey> _containerKey = [GlobalKey()];
   final List<String> items = List<String>.generate(100, (i) => "Item $i");
-  final OverlayDialog _overlayDialog = OverlayDialog();
+  final OverrideDialog _overlayDialog = OverrideDialog();
   _ListMyState();
 
   Stream<double> numberStream(int index) async* {

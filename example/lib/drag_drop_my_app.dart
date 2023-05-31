@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:overlay_dialog/overlay_dialog.dart';
+import 'package:overlay_dialog/override_dialog.dart';
 
 class DragDropMyApp extends StatefulWidget {
   const DragDropMyApp({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class DragDropMyApp extends StatefulWidget {
 }
 
 class _DragDropState extends State<DragDropMyApp> {
-  final OverlayDialog _overRayDialog = OverlayDialog();
+  final OverrideDialog _overRayDialog = OverrideDialog();
   StreamController _streamController = StreamController.broadcast();
   String _tex = 'drag&drop';
   final _offst = const Offset(0, 1);
