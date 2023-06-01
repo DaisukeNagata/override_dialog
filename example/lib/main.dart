@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:override_dialog_example/dialog_my_app.dart';
 import 'package:override_dialog_example/drag_drop_my_app.dart';
 import 'package:override_dialog_example/drawer_my_app.dart';
 import 'package:override_dialog_example/front_and_my_app.dart';
@@ -60,6 +61,19 @@ class _MyAppState extends State<MyApp> {
                         MaterialPageRoute(
                           builder: (BuildContext context) {
                             return const FrontAndBackMyApp();
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.add),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const DialogMyApp();
                           },
                         ),
                       );
