@@ -9,3 +9,11 @@
 ## 0.0.3
 
 - add New Widget OverrideDialog
+
+## 0.0.4
+
+- add Real AlertDialog
+
+## 0.0.5
+
+- Update README.md
