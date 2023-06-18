@@ -37,3 +37,7 @@
 ## 0.1.2
 
 - update CircleProgress
+
+## 0.1.3
+
+- Update README.md
