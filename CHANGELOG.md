@@ -17,3 +17,11 @@
 ## 0.0.5
 
 - Update README.md
+
+## 0.0.6
+
+- add CircleProgress
+
+## 0.0.7
+
+- update CircleProgress

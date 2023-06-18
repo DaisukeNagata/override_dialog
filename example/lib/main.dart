@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leadingWidth: 200,
+          leadingWidth: MediaQuery.of(context).size.width,
           leading: Builder(
             builder: (BuildContext context) {
               return SingleChildScrollView(
