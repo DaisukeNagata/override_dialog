@@ -33,3 +33,7 @@
 ## 0.0.9
 
 - update CircleProgress
+
+## 0.1.2
+
+- update CircleProgress

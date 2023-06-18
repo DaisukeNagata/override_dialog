@@ -22,11 +22,12 @@ class _CircleProgressState extends State<CircleProgress> {
               context,
               const Offset(0, 1),
               IgnorePointer(
-                child: Center(
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width / 2,
-                    height: MediaQuery.of(context).size.width / 2,
-                    child: const CircularProgressIndicator(),
+                child: Container(
+                  color: Colors.blueGrey.withOpacity(0.6),
+                  width: MediaQuery.of(context).size.width,
+                  height: MediaQuery.of(context).size.height,
+                  child: const Center(
+                    child: CircularProgressIndicator(),
                   ),
                 ),
               ),
