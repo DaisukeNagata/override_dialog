@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:override_dialog_example/circular_progress.dart';
 import 'package:override_dialog_example/dialog_my_app.dart';
 import 'package:override_dialog_example/drag_drop_my_app.dart';
 import 'package:override_dialog_example/drawer_my_app.dart';
@@ -25,61 +26,21 @@ class _MyAppState extends State<MyApp> {
           leadingWidth: 200,
           leading: Builder(
             builder: (BuildContext context) {
-              return Row(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.add),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (BuildContext context) {
-                            return const DrawerMypp();
-                          },
-                        ),
-                      );
-                    },
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.add),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (BuildContext context) {
-                            return const DragDropMyApp();
-                          },
-                        ),
-                      );
-                    },
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.add),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (BuildContext context) {
-                            return const FrontAndBackMyApp();
-                          },
-                        ),
-                      );
-                    },
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.add),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (BuildContext context) {
-                            return const DialogMyApp();
-                          },
-                        ),
-                      );
-                    },
-                  ),
-                ],
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Row(
+                      children: [
+                        _iconWidget(const DrawerMypp(), context),
+                        _iconWidget(const DragDropMyApp(), context),
+                        _iconWidget(const FrontAndBackMyApp(), context),
+                        _iconWidget(const DialogMyApp(), context),
+                        _iconWidget(const CircleProgress(), context),
+                      ],
+                    ),
+                  ],
+                ),
               );
             },
           ),
@@ -90,6 +51,22 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _iconWidget(Widget w, BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.add),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) {
+              return w;
+            },
+          ),
+        );
+      },
     );
   }
 }

@@ -16,7 +16,7 @@ class OverrideDialog {
     Widget child,
     int speed,
   ) async {
-    if (isOpen == false) {
+    if (!isOpen) {
       hide(context, speed.toDouble());
       return;
     }
@@ -48,9 +48,11 @@ class OverrideDialog {
   }
 
   Future<void> hide(BuildContext context, double speed) async {
-    await _animationController.reverse();
-    _overlayEntry.remove();
-    isOpen = true;
+    if (!isOpen) {
+      await _animationController.reverse();
+      _overlayEntry.remove();
+      isOpen = true;
+    }
   }
 
   Future<void> reset(BuildContext context) async {
