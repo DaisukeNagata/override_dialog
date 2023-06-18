@@ -21,8 +21,14 @@ class _CircleProgressState extends State<CircleProgress> {
             dialog.show(
               context,
               const Offset(0, 1),
-              const Center(
-                child: CircularProgressIndicator(),
+              IgnorePointer(
+                child: Center(
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width / 2,
+                    height: MediaQuery.of(context).size.width / 2,
+                    child: const CircularProgressIndicator(),
+                  ),
+                ),
               ),
               10,
             );
