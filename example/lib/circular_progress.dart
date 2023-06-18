@@ -8,9 +8,15 @@ class CircleProgress extends StatefulWidget {
 }
 
 class _CircleProgressState extends State<CircleProgress> {
+  final OverrideDialog dialog = OverrideDialog();
+  @override
+  void dispose() {
+    super.dispose();
+    dialog.hide(context, 10);
+  }
+
   @override
   Widget build(BuildContext context) {
-    final OverrideDialog dialog = OverrideDialog();
     return Scaffold(
       appBar: AppBar(
         title: const Text('CircleProgress'),
