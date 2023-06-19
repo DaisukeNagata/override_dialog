@@ -22,7 +22,7 @@ class _DialogMyAppState extends State<DialogMyApp> {
           children: [
             TextButton(
               onPressed: () {
-                dialog.hide(context, 100);
+                dialog.hide(context);
               },
               child: const Text('Backround'),
             ),
@@ -46,7 +46,7 @@ class _DialogMyAppState extends State<DialogMyApp> {
                         actions: <Widget>[
                           TextButton(
                             onPressed: () {
-                              dialog.hide(context, 100);
+                              dialog.hide(context);
                             },
                             child: const Text('Close'),
                           )

@@ -17,7 +17,7 @@ class OverrideDialog {
     int speed,
   ) async {
     if (!isOpen) {
-      hide(context, speed.toDouble());
+      hide(context);
       return;
     }
     final overlayState = Overlay.of(context);
@@ -47,7 +47,7 @@ class OverrideDialog {
     isOpen = false;
   }
 
-  Future<void> hide(BuildContext context, double speed) async {
+  Future<void> hide(BuildContext context) async {
     if (!isOpen) {
       await _animationController.reverse();
       _overlayEntry.remove();
@@ -63,6 +63,28 @@ class OverrideDialog {
     );
     _overlayEntry.remove();
     isOpen = true;
+  }
+
+  Future<void> upDate(BuildContext context, Widget child, Offset offset) async {
+    final overlayState = Overlay.of(context);
+    _overlayEntry.remove();
+    _overlayEntry = OverlayEntry(builder: (context) {
+      return AbsorbPointer(
+        absorbing: false,
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            OverRayWidget(
+              animationController: _animationController,
+              offset: offset,
+              child: child,
+            ),
+          ],
+        ),
+      );
+    });
+    overlayState.insert(_overlayEntry);
+    isOpen = false;
   }
 }
 

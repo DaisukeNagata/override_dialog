@@ -45,3 +45,7 @@
 ## 0.1.4
 
 - update CircleProgress
+
+## 0.1.5
+
+- update PickerMyApp

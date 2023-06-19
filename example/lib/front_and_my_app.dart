@@ -15,10 +15,10 @@ class _FrontAndBackState extends State<FrontAndBackMyApp> {
   @override
   void dispose() {
     if (!dialog.isOpen) {
-      dialog.hide(context, 1);
+      dialog.hide(context);
     }
     if (!dialog2.isOpen) {
-      dialog2.hide(context, 1);
+      dialog2.hide(context);
     }
     super.dispose();
   }

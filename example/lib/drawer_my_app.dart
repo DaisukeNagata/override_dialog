@@ -23,10 +23,10 @@ class _DrawerMyppState extends State<DrawerMypp> {
   @override
   void dispose() {
     if (!_overRayDialog.isOpen) {
-      _overRayDialog.hide(context, 10);
+      _overRayDialog.hide(context);
     }
     if (!_overRayDialog2.isOpen) {
-      _overRayDialog2.hide(context, 10);
+      _overRayDialog2.hide(context);
     }
     super.dispose();
   }

@@ -12,7 +12,7 @@ class _CircleProgressState extends State<CircleProgress> {
   @override
   void dispose() {
     super.dispose();
-    dialog.hide(context, 10);
+    dialog.hide(context);
   }
 
   @override

@@ -5,6 +5,7 @@ import 'package:override_dialog_example/drag_drop_my_app.dart';
 import 'package:override_dialog_example/drawer_my_app.dart';
 import 'package:override_dialog_example/front_and_my_app.dart';
 import 'package:override_dialog_example/list_my_app.dart';
+import 'package:override_dialog_example/picker_my_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +38,7 @@ class _MyAppState extends State<MyApp> {
                         _iconWidget(const FrontAndBackMyApp(), context),
                         _iconWidget(const DialogMyApp(), context),
                         _iconWidget(const CircleProgress(), context),
+                        _iconWidget(const PickerMyApp(), context),
                       ],
                     ),
                   ],
