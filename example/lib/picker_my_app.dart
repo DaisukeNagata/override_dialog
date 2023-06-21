@@ -63,14 +63,14 @@ class _BirthdayPickerState extends State<BirthdayPicker> {
     );
   }
 
-  Future<void> _timePicker(
+  _timePicker(
     BuildContext context,
     int index,
-  ) async {
+  ) {
     if (dialog.isOpen) {
-      await _dialogWidget(index);
+      _dialogWidget(index);
     } else {
-      await dialog.upDate(
+      dialog.upDate(
         context,
         _picker(index),
         const Offset(0, 1),
@@ -78,8 +78,8 @@ class _BirthdayPickerState extends State<BirthdayPicker> {
     }
   }
 
-  _dialogWidget(int index) async {
-    await dialog.show(
+  _dialogWidget(int index) {
+    dialog.show(
       context,
       const Offset(0, 1),
       _picker(index),
@@ -87,7 +87,7 @@ class _BirthdayPickerState extends State<BirthdayPicker> {
     );
   }
 
-  Widget _myPageBottomPicker(Widget picker) {
+  _myPageBottomPicker(Widget picker) {
     return SizedBox(
       height: 350,
       child: Stack(
@@ -98,7 +98,7 @@ class _BirthdayPickerState extends State<BirthdayPicker> {
     );
   }
 
-  List<Widget> listYear(
+  _listYear(
     int start,
     int index,
   ) {
@@ -182,13 +182,13 @@ class _BirthdayPickerState extends State<BirthdayPicker> {
                 });
               },
               childDelegate: [
-                ListWheelChildLoopingListDelegate(children: listYear(9, 2023)),
+                ListWheelChildLoopingListDelegate(children: _listYear(9, 2023)),
                 ListWheelChildLoopingListDelegate(children: _list(9, 12)),
                 ListWheelChildLoopingListDelegate(children: _list(9, 31)),
                 ListWheelChildLoopingListDelegate(children: _list(9, 24)),
               ],
               children: [
-                listYear(1989, 2023),
+                _listYear(1989, 2023),
                 _list(9, 12),
                 _list(9, 31),
                 _list(9, 24),

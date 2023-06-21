@@ -53,3 +53,11 @@
 ## 0.1.6
 
 - Update README.md
+
+## 0.1.7
+
+- update PickerMyApp
+
+## 0.1.8
+
+- update PickerMyApp
