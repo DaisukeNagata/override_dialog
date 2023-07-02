@@ -61,3 +61,7 @@
 ## 0.1.8
 
 - update PickerMyApp
+
+## 0.1.9
+
+- update Licence
