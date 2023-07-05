@@ -65,3 +65,11 @@
 ## 0.1.9
 
 - update Licence
+
+## 0.2.0
+
+- update Licence
+
+## 0.2.1
+
+- add DraggableDialogApp example

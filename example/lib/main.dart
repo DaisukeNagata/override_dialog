@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:override_dialog_example/circular_progress.dart';
 import 'package:override_dialog_example/dialog_my_app.dart';
 import 'package:override_dialog_example/drag_drop_my_app.dart';
+import 'package:override_dialog_example/draggable_dialog_app.dart';
 import 'package:override_dialog_example/drawer_my_app.dart';
 import 'package:override_dialog_example/front_and_my_app.dart';
 import 'package:override_dialog_example/list_my_app.dart';
@@ -39,6 +40,7 @@ class _MyAppState extends State<MyApp> {
                         _iconWidget(const DialogMyApp(), context),
                         _iconWidget(const CircleProgress(), context),
                         _iconWidget(const PickerMyApp(), context),
+                        _iconWidget(const DraggableDialogApp(), context),
                       ],
                     ),
                   ],
