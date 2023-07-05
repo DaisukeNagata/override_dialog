@@ -1,6 +1,6 @@
 name: override_dialog
 description: A dialog that can manipulate background data.
-version: 0.2.1
+version: 0.2.2
 homepage: https://github.com/DaisukeNagata/override_dialog
 
 environment:

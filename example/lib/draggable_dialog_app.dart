@@ -14,6 +14,12 @@ class _DraggableDialogAppState extends State<DraggableDialogApp> {
   int _counter = 0;
 
   @override
+  void dispose() {
+    super.dispose();
+    dialog.hide(context);
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -67,7 +73,7 @@ class _DraggableDialogAppState extends State<DraggableDialogApp> {
       context,
       const Offset(0, 0),
       _sheet(),
-      100,
+      300,
     );
   }
 

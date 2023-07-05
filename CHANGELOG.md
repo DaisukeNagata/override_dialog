@@ -73,3 +73,7 @@
 ## 0.2.1
 
 - add DraggableDialogApp example
+
+## 0.2.2
+
+- update DraggableDialogApp dispose logic and speed
